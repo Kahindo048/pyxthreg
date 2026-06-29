@@ -28,13 +28,6 @@ The stable release is available on the Python Package Index (PyPI). Install it u
 ```bash
 pip install pyxthreg
 ```
-
-For export to Word/Excel and example datasets:
-
-```bash
-pip install "pyxtabond2[export]"
-```
-
 Development install from source:
 
 ```bash
@@ -43,6 +36,7 @@ cd pyxthreg
 pip install -e .
 ```
 🚀 Quick Start
+
 The API is designed to be intuitive and strictly requires a standard "long format" pandas DataFrame.
 
 ```python
@@ -106,6 +100,7 @@ In standardized benchmarking (300 bootstrap replications, 300 grid points) again
 
 ---
 ## 📖 References & Methodology
+
 This package implements the algorithms and corrections outlined in the following seminal papers:
 
 Hansen, B. E. (1999). Threshold effects in non-dynamic panels: Estimation, testing, and inference. Journal of Econometrics, 93(2), 345-368.
@@ -115,6 +110,7 @@ Hansen, B. E. (2000). Sample splitting and threshold estimation. Econometrica, 6
 Davies, R. B. (1977). Hypothesis testing when a nuisance parameter is present only under the alternative. Biometrika, 64(2), 247-254.
 
 Wang, Q. (2015). Fixed-effect panel threshold model using Stata. The Stata Journal, 15(1), 121-131.
+
 ---
 
 ## 🤝 Contributing

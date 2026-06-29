@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyxthreg"
+version = "1.0.0"
+description = "High-Performance Panel Threshold Regression replicating Stata's xthreg"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [{ name = "Frederic Kahindo", email = "frederickahindo048@gmail.com" }]
+requires-python = ">=3.9"
+dependencies = [
+    "numpy>=1.21",
+    "pandas>=1.3",
+    "scipy>=1.7",
+    "matplotlib>=3.5",
+    "numba>=0.56",
+    "joblib>=1.1",
+]
+keywords = ["econometrics", "threshold-regression", "panel-data", "xthreg", "hansen"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+[project.optional-dependencies]
+export = ["python-docx>=0.8", "openpyxl>=3.0"]
+dev = ["pytest>=7.0"]
+
+[project.urls]
+Homepage = "https://github.com/Kahindo048/pyxthreg"
+Repository = "https://github.com/Kahindo048/pyxthreg"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["pyxthreg*"]
+
+[tool.setuptools.package-data]
+pyxthreg = ["datasets/*"]
+
+[tool.setuptools]
+license-files = []
